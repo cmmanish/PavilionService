@@ -7,7 +7,7 @@ exports.handleHOME = function (request, response) {
     response.render('pages/index');
 };
 
-exports.handleGETALL = function (request, response) {
+exports.handleGETDatabase = function (request, response) {
 
   var country = request.params.country;
   var contents = fs.readFileSync("json/"+country+"PlayerStats.json");
